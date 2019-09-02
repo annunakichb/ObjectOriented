@@ -1,0 +1,25 @@
+1.从键盘输入一个路径，输出该路径下所有扩展名是doc,doc,xls,xlsx,ppt,pptx的文件。要求使用匿名类
+2.实现书上例题Example10_8.java、
+Example10_9.java和Example10_11.java
+3.制作一个utf-8编码的文本文件，内容如下
+陈一,男[parents=,](couple=钱玉)
+赵二,男[parents=,](couple=陈丽)
+张三,男[parents=,](couple=赵雪)
+赵四,男[parents=赵二,陈丽](couple=王红)
+张五,男[parents=张三,赵雪](couple=)
+陈生,男[parents=陈一,钱玉](couple=)
+钱七,男[parents=,](couple=)
+陈丽,女[parents=陈一,钱玉](couple=赵二)
+读取该文件内容，并将每一行格式转换后写入一个新文件，转换的新格式为(以第一行为例):
+姓名=陈一,姓名=男,父亲=,母亲=,配偶=钱玉,子女=陈生,陈丽
+4.（选做）输入一个路径，输出该路径的所有子路径，例如C:\有a,b,c三个文件夹，a下面有a1,a2两个文件夹，b下面有b1,b,2,b3，c下面有c1，则输出为
+a
+    a1
+    a2
+b
+    b1
+    b2
+    b3
+c
+   c1
+以此类推
