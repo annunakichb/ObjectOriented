@@ -1,0 +1,40 @@
+1.按要求实现Matrix类，使得程序能正确执行
+/**
+ * 矩阵类，待实现
+ * @author Administrator
+ *
+ */
+class Marix{
+	
+}
+public class MarixEncloser {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//因为Marix类代码不完整，使得下面代码有错误，请实现完整的Marix，以使得下面程序能够正确执行
+		//Marix r1 = new Marix(2,3);          //创建一个2X3矩阵，元素值都是0
+		//Marix r2 = new Marix(3,2);  //创建一个3X2矩阵，元素值都是0
+		//Marix r3 = new Marix(3,2);          //创建一个3X2矩阵，元素值都是0
+		
+		//r1.createRandomValues();            //0-100之间的随机数生成矩阵的值
+		//r2.createKeyboardInputValues();     //从键盘逐个输入矩阵的值
+		//r3.createEyesValues();              //创建单位矩阵
+		
+		//Marix r4 = r1.multply(r2);          //矩阵r1和r2相乘，结果为r4，r1和r2本身不变
+		//r4.print();                         //输出r4，输出格式等同于matlab：每行元素分号分开，每列元素空格分开，前后加中括号
+		
+		
+		//Marix r5 = r2.add(r3);              //矩阵r2和r3相加，结果为r5,，r1和r2本身不变
+		//r5.print();  
+		
+		//Marix r6 = r5.multply(r5);          //矩阵r5的平方，结果为r6，r5本身不变，
+		//r6.print();
+		
+		
+		//请以注释的形式回答：
+		//1.若add函数需要修改自身，如r2.add(r3)后r2本身变化，成为r2+r3的结果，则函数的声明和函数调用分别如何修改
+		//2.请根据以上例子与第四次作业比较，说明你对面向过程编程和面向对象编程不同的理解?
+		
+	}
+
+}
