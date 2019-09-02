@@ -1,0 +1,25 @@
+1.Example5_11.java
+2.设计学生类，包括姓名和绩点成绩，以及构造函数；设计职工类，包括姓名和工作年限，以及构造函数。
+  两个输入函数：分别实现学生类和职工类的键盘输入，这两个函数没有形式参数，分别返回学生类和职工类的数组
+  两个排序函数：分别实现对学生数组和职工数组的排序
+  两个打印函数：分别打印输出学生数组和职工数组的信息
+3.针对第2题，用程序注释的形式回答：
+   3.1 什么是开闭原则
+   3.2 若第2题中需要不断扩充增加对新的类的输入、排序和打印（例如教师类，书本类等等），每个类都实现自己的这三个函数
+        这样的扩充方式算满足开闭原则吗？请说明理由
+   3.3（选答）通过接口、多态和上转型，能否给出针对3.2情况的满足开闭原则的代码设计。
+4.自学专题：针对书中第四章关于java doc的内容，以及百度搜索相关知识（"java doc","eclipse java doc"）
+                 补全下面程序的java doc注释，并导出帮助html文件集（注：交作业的时候需将html集合压缩）
+class Account{
+     private String name;
+     private String password;
+     private Date lastLoginDate;
+     public boolean login(String name,String password){
+                   if(name == null || password==null)return false;
+                   if(name.equals(this.name) || password.equals(this.password)){
+                         lastLoginDate = new Date();
+                         return true;
+                    }
+                   return false;
+     }
+}
