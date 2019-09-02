@@ -1,0 +1,37 @@
+1.在原有五子棋棋盘程序基础上，增加黑白子落子功能(本周开始可以准备课程设计，最终课程设计报告和答辩在第18-19周)
+2.修改上周学生，职工输入，排序和打印程序：
+2.1 增加Person类，包括String name成员变量，修改原学生和职工类，使其继承Person类
+2.2 增加IComparable接口，包含compare抽象方法，并让学生和职工类实现该接口以及其中的抽象方法
+2.3 修改main函数，使得排序和打印功能满足开闭原则
+3.字符串处理练习：
+3.1 实现Person类如下：
+class Person{
+	/**姓名*/
+	String name;
+	/**性别*/
+	String gender;
+	/**父亲*/
+	Person father;
+	/**母亲*/
+	Person mather;
+	/**配偶*/
+	Person couple;
+}
+3.2 main函数中定义如下字符串数组：每个字符串的意义是：姓名,性别[parent=父亲名称,母亲名称](couple=配偶名称)
+String[] strs = new String[]{
+"陈一,男[parents=,](couple=钱玉)",
+"赵二,男[parents=,](couple=陈丽)",
+"张三,男[parents=,](couple=赵雪)",
+"赵四,男[parents=赵二,陈丽](couple=王红)",
+"张五,男[parents=张三,赵雪](couple=)",
+"陈生,男[parents=陈一,钱玉](couple=)",
+"钱七,男[parents=,](couple=)",
+"陈丽,女[parents=陈一,钱玉](couple=赵二)",
+"赵燕,女[parents=赵二,陈丽](couple=)",
+"赵雪,女[parents=赵二,陈丽](couple=张三)",
+"张敏,女[parents=张三,赵雪](couple=)",
+"王红,女[parents=,](couple=赵四)",
+"赵鑫,女[parents=赵四,王红](couple=)",
+"钱玉,女[parents=,](couple=陈一)"
+};
+3.3 编写程序对以上字符串依次解析，得到14个Person类型的对象，并使得每个对象的信息与字符串所表达的信息一致。
